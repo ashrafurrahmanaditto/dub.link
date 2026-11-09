@@ -24,11 +24,11 @@ module.exports = withPlausibleProxy({
   apiPath: "/_proxy/plausible/event",
 })({
   reactStrictMode: false,
+  serverExternalPackages: ["@boxyhq/saml-jackson"],
   transpilePackages: [
     "prettier",
     "shiki",
     "@dub/email",
-    "@boxyhq/saml-jackson",
   ],
   outputFileTracingIncludes: {
     "/api/auth/saml/token": [

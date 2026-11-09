@@ -1,5 +1,5 @@
 import type { SiteVisitTrackingSettingsValue } from "@/lib/sitemaps/site-visit-tracking";
-import { DirectorySyncProviders } from "@boxyhq/saml-jackson";
+import type { DirectoryType } from "@boxyhq/saml-jackson";
 import {
   FolderUserRole,
   Link,
@@ -229,7 +229,7 @@ export interface SAMLProviderProps {
   logo: string;
   saml: "okta" | "azure" | "google";
   samlModalCopy: string;
-  scim: keyof typeof DirectorySyncProviders;
+  scim: DirectoryType;
   scimModalCopy: {
     url: string;
     token: string;
