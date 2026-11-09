@@ -45,6 +45,8 @@
     "@stripe/stripe-js": "^7.3.1",
     "@tanstack/react-table": "^8.17.3",
     "@team-plain/typescript-sdk": "^5.9.0",
+    "@tidbcloud/prisma-adapter": "^6.17.0",
+    "@tidbcloud/serverless": "^0.3.0",
     "@types/base-x": "^3.0.10",
     "@types/bcryptjs": "^2.4.6",
     "@upstash/qstash": "^2.11.0",
