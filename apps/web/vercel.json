@@ -46,10 +46,5 @@
       "path": "/api/cron/queue/retry",
       "schedule": "0 4 * * *"
     }
-  ],
-  "functions": {
-    "app/(ee)/api/cron/**/route.ts": {
-      "maxDuration": 300
-    }
-  }
+  ]
 }
