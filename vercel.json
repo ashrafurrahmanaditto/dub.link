@@ -1,0 +1,55 @@
+
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "crons": [
+    {
+      "path": "/api/cron/domains/verify",
+      "schedule": "0 0 * * *"
+    },
+    {
+      "path": "/api/cron/domains/renewal-reminders",
+      "schedule": "0 8 * * *"
+    },
+    {
+      "path": "/api/cron/domains/renewal-payments",
+      "schedule": "0 9 * * *"
+    },
+    {
+      "path": "/api/cron/streams/send-link-clicked-webhooks",
+      "schedule": "0 10 * * *"
+    },
+    {
+      "path": "/api/cron/streams/update-click-stats",
+      "schedule": "0 11 * * *"
+    },
+    {
+      "path": "/api/cron/streams/update-workspace-links-usage",
+      "schedule": "0 12 * * *"
+    },
+    {
+      "path": "/api/cron/trial-emails",
+      "schedule": "0 13 * * *"
+    },
+    {
+      "path": "/api/cron/trigger-backup",
+      "schedule": "40 14 * * *"
+    },
+    {
+      "path": "/api/cron/sitemaps/queue",
+      "schedule": "0 2 * * *"
+    },
+    {
+      "path": "/api/cron/sync-redis-resources",
+      "schedule": "0 3 * * *"
+    },
+    {
+      "path": "/api/cron/queue/retry",
+      "schedule": "0 4 * * *"
+    }
+  ],
+  "functions": {
+    "app/(ee)/api/cron/**/*.ts": {
+      "maxDuration": 300
+    }
+  }
+}
