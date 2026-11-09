@@ -48,7 +48,7 @@
     }
   ],
   "functions": {
-    "app/(ee)/api/cron/**/*.ts": {
+    "app/(ee)/api/cron/**/route.ts": {
       "maxDuration": 300
     }
   }
